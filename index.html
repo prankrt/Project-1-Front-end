@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+</head>
+<link rel="stylesheet" href="https://fonts.google.com/noto/specimen/Noto+Serif">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+    font-family: Noto serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg');
+    background-size: 625px 1325px;
+
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+
+@media (max-width:1100px) {
+    .left {
+        position: absolute;
+        left: 20px;
+        top: 8px;
+        width: 15px;
+        height: 12px;
+    }
+}
+
+.left img {
+    width: 92px;
+}
+
+@media (max-width:1100px) {
+    .left img {
+        width: 30px;
+    }
+}
+
+.mid {
+    display: block;
+    width: 37%;
+    margin: 20px auto;
+}
+
+.right {
+    position: absolute;
+    display: inline-block;
+    right: 34px;
+    top: 20px;
+}
+
+.navbar {
+    display: inline block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+@media(max-width:1326px) {
+    .navbar li {
+        width: 50%;
+        font-size: 8px;
+        margin: 2px;
+        padding: 2px;
+        display: inline-block;
+    }
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+}
+
+.btn {
+    margin: 0px 9px;
+    color: rgb(237, 227, 227);
+    background-color: rgb(11, 1, 1);
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width:1236px) {
+    .btn {
+        width: 40%;
+        margin: 0px 3px;
+        font-size: 8px;
+        padding: 2px 4px;
+    }
+}
+
+.btn:hover {
+    background-color: grey;
+}
+
+.container {
+    border: 2px solid white;
+    margin: 80px 35px;
+    padding: 75px;
+    border-radius: 15px;
+    width: 35%;
+}
+
+.formgroup input {
+    font-family: Noto serif;
+    text-align: center;
+    display: block;
+    width: 485px;
+    height: 30px;
+    margin: 6px auto;
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+@media (max-width:1326px) {
+    .formgroup input {
+        width: 100%;
+    }
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    font-family: Noto serif;
+    display: block;
+    width: 485px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+@media (max-width:1326px) {
+    .container button {
+        width: 100%;
+    }
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/img4.jpg" alt="">
+            <div>
+                Fitness Center
+            </div>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Maintain Fitness from now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit now</button>
+        </form>
+    </div>
+</body>
+
+</html>
